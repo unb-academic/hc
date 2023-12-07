@@ -1,0 +1,183 @@
+\documentclass[
+	12pt,
+	openright,
+	twoside,
+	a4paper,
+	english,
+	french,
+	spanish,
+	brazil
+]{abntex2}
+
+% ----------------
+% Pacotes básicos.
+% ----------------
+\usepackage{lmodern}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{indentfirst}
+\usepackage{color}
+\usepackage{graphicx}
+\usepackage{microtype}
+
+% --------------------
+% Pacotes de citações.
+% --------------------
+\usepackage[brazilian,hyperpageref]{backref}
+\usepackage[alf]{abntex2cite}
+
+% -------------------------
+% Configurações de pacotes.
+% -------------------------
+
+\renewcommand{\backrefpagesname}{Citado na(s) página(s):~}
+\renewcommand{\backref}{}
+\renewcommand*{\backrefalt}[4]{
+	\ifcase #1
+		Nenhuma citação no texto.
+	\or
+		Citado na página #2.
+	\else
+		Citado #1 vezes nas páginas #2.
+	\fi
+}
+
+% ------------------------------------------------
+% Informações de dados para capa e folha de rosto.
+% ------------------------------------------------
+\titulo{A Era do Cativeiro Digital e a Ditadura do Comportamento}
+\autor{
+  Caio Alexandre Ornelas Silva (221007644) \\ Danilo Augusto Ligiero (221007967)
+}
+\local{Brasília, Brasil}
+\data{2023}
+\orientador{Vanessa Maria de Castro}
+\instituicao{
+  Universidade de Brasília - UnB
+  \par
+  Faculdade UnB Gama - FGA
+  \par
+  Engenharias
+}
+\tipotrabalho{Ensaio}
+
+% ---------------------------------------
+% Espaçamentos entre linhas e parágrafos.
+% ---------------------------------------
+\setlength{\parindent}{1.3cm}
+\setlength{\parskip}{0.2cm}
+
+% -----------------
+% Compila o índice.
+% -----------------
+\makeindex
+
+% --------------------
+% Início do documento.
+% --------------------
+\begin{document}
+  \selectlanguage{brazil}
+  \frenchspacing
+  \imprimircapa
+  \imprimirfolhaderosto*
+
+  % --------
+  % Resumos.
+  % --------
+  \setlength{\absparsep}{18pt}
+  \begin{resumo}
+    Este ensaio tem o objetivo de expor e colocar em debate a temática
+    ``Capitalismo de Vigilância e a Erosão da Privacidade''  que é de extrema
+    importância e muitas vezes passa despercebido pela sociedade no geral, mas
+    que sempre está presente no cotidiano. Este ensaio terá como principal
+    referência teórica a obra de Shoshana Zuboff, ``A Era do Capitalismo de
+    Vigilância'', que aborda a respeito do uso da tecnologia para exploração
+    inserido em um contexto da vida moderna. Porém, tambem serão utilizados
+    grandes pensadores como Montesquieu e Foucault afim de tornar mais completo
+    e sólido todo o estudo do debate.
+
+    \textbf{Palavras-chave}:
+      Capitalismo de Vigilância, Privacidade, Tecnologia, Sociedade.
+  \end{resumo}
+
+  % ------------------
+  % Inserir o sumário.
+  % ------------------
+  % \pdfbookmark[0]{\contentsname}{toc}
+  % \tableofcontents*
+  % \cleardoublepage
+
+  % -------------------
+  % Elementos textuais.
+  % -------------------
+  \textual
+
+  % -----------
+  % Introdução.
+  % -----------
+  \chapter{Introdução}
+
+  De acordo com a \citeonline{human-evolution}, as primeiras grandes tecnologias
+  criadas pela humanidade talvez sejam a invenção das ferramentas de pedra (há
+  2,8 milhões de anos), a descoberta e aperfeiçoamento do uso do fogo (há 1,8
+  milhões de anos), além da invenção da agricultura e da construção de barracos
+  para moradia há 25 mil anos. Já na atualidade tem-se a internet, que caminha
+  mais recentemente com a inteligência artificial (especificamente IAs
+  generativas), como o principal personagem coadjuvante no cenário tecnológico,
+  mas também da própria realidade. A internet ganhou tanta força que hoje não se
+  pode viver usufruindo da modernidade e urbanização sem o uso constante dela.
+  Partindo destes ponto, é mais fácil debater como o viés do uso do poder
+  direcionado ao controle massificado (da grande sociedade), através de
+  ferramentas como internet e tecnologias de vigilância, é praticado e a forma
+  como isso afeta a sociedade e o indivíduo.
+
+  Nesse contexto, é possível observar que esse processo que se iniciou há cerca
+  de 2,8 milhões de anos ocorreu não somente com o objetivo natural intrínseco
+  de evolução, mas também com um viés de uso de tais ferramentas para exercer
+  poder e controle. No entanto, esse viés não está contido em todo processo,
+  provavelmente se inicia de forma mais recente na história na época das
+  primeiras civilizações fixas, onde a dinâmica de poder muda completamente e as
+  relações políticas entre os indivíduos ganha um palco maior. Isso pode ser
+  visto mais fortemente depois do surgimento do capitalismo (século XV-XVI) na
+  Europa, de acordo com o \citeonline{modern-capitalism}, mais especificamente
+  após a Terceira Revolução Industrial, onde se teve a invenção dos
+  computadores. Shoshana Zuboff mostra em sua obra ``Capitalismo de Vigilância''
+  exatamente como esse vié é aplicado no atual contexto capitalista tecnológico,
+  além de fazer uma profunda análise à respeito de diversos aspectos contidos
+  nisso.
+
+  A era da internet e suas tecnologias (Terceira Revolução Industrial) podem ser
+  descritas como um enorme avanço tecnológico para a humanidade, visto que
+  trouxe consigo muitas inovações positivas para a sociedade. Essas inovações
+  foram responsáveis por globalizar o mundo e conectar as pessoas através de por
+  exemplo plataformas de rede sociais, mas ao mesmo tempo também se tornaram
+  grandes ferramentas de controle sistemático e massificado da opinião pública e
+  do comportamento da populacao pelas que detém o poder dessas plataformas.
+
+  % ----------------
+  % Desenvolvimento.
+  % ----------------
+  \chapter{A Ideia de Vigilância}
+
+  Um grande pensador que aborda a respeito do uso do poder com fins de controle
+  e vigilância é o Michel Foucault. Foucault apresenta seus conceitos que são de
+  extrema importância para o entendimento do que é vigilância, através do uso do
+  Panóptico, que é um termo concebido pelo filosofo Jeremy Bentham em 1785. Esse
+  termo designa a ideia de uma penitenciaria ideal (perfeita) onde um único
+  vigilante consegue observar todos os prisioneiros, de forma que estes não
+  possam saber se estão ou não sendo observados. O Panóptico faz a inversão
+  entre o ato de reprimir e produzir, onde a disciplina é invertida deixando de
+  ser punitiva e repressiva e passa a ser modeladora do comportamento de forma
+  interna ao indivíduo.
+
+
+  % -----------------------
+  % Elementos pós-textuais.
+  % -----------------------
+  \postextual
+
+  % ---------------------------
+  % Referências bibliográficas.
+  % ---------------------------
+  \bibliography{refs}
+\end{document}
